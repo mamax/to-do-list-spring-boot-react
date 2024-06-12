@@ -19,7 +19,7 @@ function AddTodo({isAuthenticated, setIsAuthenticated}) {
     e.preventDefault();
 
     try {
-      await axios.post('http://3.70.127.120:3001/api/todo', {title, targetDate}, {
+      await axios.post('http://18.185.149.114:3001/api/todo', {title, targetDate}, {
         headers: {
           'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
         }
